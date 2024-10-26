@@ -62,7 +62,7 @@ function showMarkers(map, coords, localities, precision) {
         const coord = coords[i];
         const locality = localities[i];
         const marker = L.marker(coord);
-        marker.bindPopup(`${coord.lat.toFixed(precision)},${coord.lng.toFixed(precision)}<br>`
+        marker.bindPopup(`${coord.lat.toFixed(precision)}, ${coord.lng.toFixed(precision)}<br>`
             + `${locality[0]}, ${locality[1]}`);
         marker.addTo(map);
     }
