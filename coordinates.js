@@ -68,4 +68,4 @@ function showMarkers(map, coords, localities, precision) {
     }
 }
 
-makeAndShowCoords(COORD_PRECISION);
+window.addEventListener("load", () => makeAndShowCoords(COORD_PRECISION));
